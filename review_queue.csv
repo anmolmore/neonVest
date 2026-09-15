@@ -1,0 +1,18 @@
+reason,source,name,firm,field,value_a,value_b
+within_source_field_conflict,mysql,Marco Baker,Fathom Collective,notes,Deep tech and hardware only. Please no marketplaces. Best contact is marco.baker@gmail.com.,Deep tech and hardware only. Please no marketplaces. Best contact is marco.baker@proton.me.
+within_source_field_conflict,mysql,Ishaan Kapoor,Ironwood Holdings,notes,"I invest personally, not through the fund. Typical cheque 25-50k. +1 631-501-8439 is fastest.",Generalist. Sector agnostic. Interested in strong founders more than markets.
+within_source_field_conflict,mysql,Owen Sharma,Fathom Partners,notes,"I invest personally, not through the fund. Typical cheque 25-50k. +1 633-407-6492 is fastest.",Writes first cheques into pre-seed and seed. Reach me on owen.sharma@gmail.com or +1 383-570-5234 — I don't check LinkedIn.
+within_source_field_conflict,mysql,,Granite Ventures,firm_raw,Granite Ventures,Granite Advisors
+within_source_field_conflict,mysql,,Fathom Partners,firm_raw,Fathom Partners,Fathom Group
+within_source_field_conflict,mysql,,Fathom Partners,notes,"I invest personally, not through the fund. Typical cheque 25-50k. +1 378-585-4363 is fastest.",Currently not deploying. Circle back next year.
+within_source_field_conflict,mysql,,Fathom Partners,source,typeform,import_2023
+blank_identity,airtable,,Fathom Group,full_name,,
+blank_identity,airtable,,Granite Ventures,full_name,,
+blank_identity,airtable,,Riverstone Partners,full_name,,
+blank_identity,airtable,,Drift Labs,full_name,,
+blank_identity,airtable,,Fathom Group,full_name,,
+blank_identity,airtable,,Fathom Partners,full_name,,
+blank_identity,airtable,,Granite Advisors,full_name,,
+blank_identity,airtable,,n/a,full_name,,
+blank_identity,airtable,,Quarry Group,full_name,,
+blank_identity,airtable,,,full_name,,

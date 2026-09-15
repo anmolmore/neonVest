@@ -1,0 +1,361 @@
+match_id,investor_pk,company,company_sector,company_stage,matched_on,outcome,investor_feedback
+5000,1067,Company J31,FinTech,Pre-seed,2025-03-17,meeting_taken,Too early.
+5001,1074,Company U93,FinTech,Series A,2024-12-05,meeting_taken,Too early.
+5002,1083,Company T35,Enterprise SaaS,Series A,2024-11-08,intro_only,Too early.
+5003,1028,Company M90,ClimateTech,Series A,2024-03-19,intro_only,Passed - portfolio conflict.
+5004,1121,Company G64,Marketplace,Seed,2023-11-27,no_response,Too early.
+5005,1184,Company V59,DeepTech,Series A,2023-10-22,no_response,"Converted, led the round."
+5006,1056,Company V41,FinTech,Series A,2023-10-16,meeting_taken,Too early.
+5007,1206,Company A38,FinTech,Seed,2026-08-11,no_response,"Converted, led the round."
+5008,1053,Company T63,FinTech,Series A,2026-06-11,intro_only,"Took the meeting as a favour, not a fit."
+5009,1001,Company J27,FinTech,Series A,2024-08-08,meeting_taken,Too early.
+5010,1032,Company M17,Enterprise SaaS,Pre-seed,2023-10-20,meeting_taken,"Strong team, wrong stage for us."
+5011,1083,Company W99,Enterprise SaaS,Series A,2026-10-21,intro_only,Passed - portfolio conflict.
+5012,1099,Company F80,Enterprise SaaS,Pre-seed,2024-06-07,meeting_taken,"Strong team, wrong stage for us."
+5013,1147,Company B78,Enterprise SaaS,Pre-seed,2025-12-10,meeting_taken,
+5014,1184,Company E95,ClimateTech,Seed,2026-04-06,intro_only,
+5015,1000,Company N12,Enterprise SaaS,Seed,2025-12-22,no_response,"Took the meeting as a favour, not a fit."
+5016,1030,Company X98,Marketplace,Pre-seed,2023-02-27,meeting_taken,"Took the meeting as a favour, not a fit."
+5017,1013,Company W87,Healthcare - Digital Health,Series A,2024-03-04,no_response,No response after two follow-ups.
+5018,1071,Company P52,DeepTech,Seed,2025-07-14,meeting_taken,Too early.
+5019,1188,Company Z20,FinTech,Series A,2024-06-02,converted,"Strong team, wrong stage for us."
+5020,1130,Company F38,Healthcare - Digital Health,Series A,2023-02-07,meeting_taken,Too early.
+5021,1056,Company U84,Healthcare - Digital Health,Seed,2026-04-04,intro_only,Passed - portfolio conflict.
+5022,1111,Company G81,FinTech,Seed,2024-10-09,converted,Passed - portfolio conflict.
+5023,1002,Company A67,Healthcare - Digital Health,Seed,2026-07-14,meeting_taken,Liked it. Asked for financials.
+5024,1186,Company K60,DeepTech,Series A,2025-08-25,intro_only,Liked it. Asked for financials.
+5025,1153,Company R78,Enterprise SaaS,Seed,2024-10-17,no_response,Passed - portfolio conflict.
+5026,1096,Company K38,Marketplace,Series A,2024-12-06,intro_only,Passed - portfolio conflict.
+5027,1179,Company R21,Marketplace,Pre-seed,2023-11-14,declined,"Converted, led the round."
+5028,1167,Company V91,FinTech,Series A,2023-02-25,meeting_taken,Passed - portfolio conflict.
+5029,1133,Company K68,Marketplace,Series A,2026-10-25,meeting_taken,Too early.
+5030,1162,Company Z12,Enterprise SaaS,Pre-seed,2024-08-07,no_response,No response after two follow-ups.
+5031,1076,Company G54,ClimateTech,Pre-seed,2023-12-20,declined,Passed - portfolio conflict.
+5032,1180,Company S67,Marketplace,Seed,2025-06-13,declined,Liked it. Asked for financials.
+5033,1102,Company V77,Marketplace,Pre-seed,2025-09-07,no_response,"Took the meeting as a favour, not a fit."
+5034,1222,Company J96,Healthcare - Digital Health,Pre-seed,2023-06-11,declined,"Took the meeting as a favour, not a fit."
+5035,1183,Company P15,Healthcare - Digital Health,Pre-seed,2026-11-16,meeting_taken,"Took the meeting as a favour, not a fit."
+5036,1079,Company Z80,ClimateTech,Pre-seed,2025-06-20,no_response,
+5037,1079,Company M81,DeepTech,Pre-seed,2026-10-15,intro_only,"Converted, led the round."
+5038,1029,Company M11,ClimateTech,Seed,2023-11-12,declined,No response after two follow-ups.
+5039,1133,Company J11,ClimateTech,Series A,2023-01-03,no_response,Passed - portfolio conflict.
+5040,1056,Company P47,DeepTech,Series A,2023-12-23,intro_only,No response after two follow-ups.
+5041,1162,Company L56,FinTech,Seed,2023-01-12,meeting_taken,"Took the meeting as a favour, not a fit."
+5042,9010,Company B54,Healthcare - Digital Health,Series A,2024-12-22,converted,Liked it. Asked for financials.
+5043,1061,Company T52,DeepTech,Series A,2025-02-10,no_response,Liked it. Asked for financials.
+5044,1092,Company A87,Marketplace,Pre-seed,2023-03-10,no_response,Too early.
+5045,1061,Company Z27,ClimateTech,Series A,2024-11-27,meeting_taken,No response after two follow-ups.
+5046,1065,Company R55,Marketplace,Seed,2025-02-03,meeting_taken,Liked it. Asked for financials.
+5047,1081,Company G53,ClimateTech,Pre-seed,2026-10-27,converted,Too early.
+5048,1215,Company M88,Healthcare - Digital Health,Pre-seed,2025-04-25,intro_only,"Strong team, wrong stage for us."
+5049,1127,Company H86,Marketplace,Pre-seed,2025-10-19,declined,No response after two follow-ups.
+5050,1184,Company R63,Marketplace,Pre-seed,2025-05-03,meeting_taken,Liked it. Asked for financials.
+5051,1139,Company P16,ClimateTech,Series A,2023-01-20,declined,Passed - portfolio conflict.
+5052,1040,Company R72,ClimateTech,Pre-seed,2023-06-15,declined,Liked it. Asked for financials.
+5053,1003,Company C82,ClimateTech,Pre-seed,2026-08-10,intro_only,
+5054,1117,Company B41,Enterprise SaaS,Pre-seed,2023-04-27,meeting_taken,Liked it. Asked for financials.
+5055,1049,Company Q98,Marketplace,Seed,2025-06-25,no_response,Passed - portfolio conflict.
+5056,1069,Company J80,FinTech,Seed,2026-02-03,converted,Liked it. Asked for financials.
+5057,1084,Company Z55,Marketplace,Pre-seed,2024-06-23,meeting_taken,Passed - portfolio conflict.
+5058,1085,Company F44,Marketplace,Pre-seed,2026-02-02,meeting_taken,Too early.
+5059,1082,Company V73,Marketplace,Seed,2023-09-26,meeting_taken,No response after two follow-ups.
+5060,1181,Company S72,FinTech,Series A,2025-02-14,converted,No response after two follow-ups.
+5061,1224,Company D18,Enterprise SaaS,Seed,2023-09-07,meeting_taken,
+5062,1215,Company D87,Marketplace,Seed,2026-05-08,meeting_taken,Too early.
+5063,1049,Company G27,DeepTech,Seed,2026-11-02,converted,"Converted, led the round."
+5064,9007,Company X78,ClimateTech,Pre-seed,2025-07-19,meeting_taken,"Converted, led the round."
+5065,1092,Company A47,ClimateTech,Series A,2025-10-18,meeting_taken,Liked it. Asked for financials.
+5066,9006,Company J10,Healthcare - Digital Health,Pre-seed,2025-08-08,converted,Passed - portfolio conflict.
+5067,1214,Company V56,FinTech,Series A,2026-09-03,converted,"Converted, led the round."
+5068,1171,Company Y70,DeepTech,Seed,2024-06-03,converted,"Converted, led the round."
+5069,1017,Company J43,Enterprise SaaS,Series A,2026-04-02,declined,"Converted, led the round."
+5070,1141,Company Y23,FinTech,Series A,2025-11-05,meeting_taken,"Converted, led the round."
+5071,1000,Company G68,Marketplace,Seed,2026-08-15,meeting_taken,"Converted, led the round."
+5072,1017,Company H79,Healthcare - Digital Health,Series A,2026-06-04,converted,Too early.
+5073,1200,Company W30,Healthcare - Digital Health,Series A,2024-02-19,meeting_taken,No response after two follow-ups.
+5074,1030,Company F72,Enterprise SaaS,Pre-seed,2024-10-14,meeting_taken,Liked it. Asked for financials.
+5075,1145,Company T31,Healthcare - Digital Health,Seed,2025-02-10,meeting_taken,"Took the meeting as a favour, not a fit."
+5076,1010,Company A41,DeepTech,Pre-seed,2023-03-03,meeting_taken,Liked it. Asked for financials.
+5077,1021,Company Q50,FinTech,Pre-seed,2024-04-07,meeting_taken,Liked it. Asked for financials.
+5078,1114,Company A96,ClimateTech,Series A,2026-03-15,no_response,Passed - portfolio conflict.
+5079,1190,Company T33,Marketplace,Series A,2024-01-25,declined,"Converted, led the round."
+5080,1054,Company F87,ClimateTech,Seed,2023-05-16,meeting_taken,"Converted, led the round."
+5081,1018,Company W98,Marketplace,Seed,2026-06-02,declined,"Took the meeting as a favour, not a fit."
+5082,1040,Company G96,ClimateTech,Pre-seed,2023-05-11,no_response,
+5083,1010,Company W75,ClimateTech,Series A,2025-05-26,no_response,Liked it. Asked for financials.
+5084,1169,Company D95,Healthcare - Digital Health,Pre-seed,2026-03-19,declined,Passed - portfolio conflict.
+5085,9004,Company F99,Healthcare - Digital Health,Series A,2026-12-04,no_response,"Converted, led the round."
+5086,1014,Company J80,Marketplace,Seed,2024-07-22,meeting_taken,Liked it. Asked for financials.
+5087,1131,Company P13,DeepTech,Pre-seed,2026-03-17,no_response,"Took the meeting as a favour, not a fit."
+5088,1006,Company M33,DeepTech,Series A,2024-06-07,meeting_taken,Liked it. Asked for financials.
+5089,1044,Company T84,DeepTech,Pre-seed,2023-01-20,meeting_taken,Passed - portfolio conflict.
+5090,1141,Company G21,Healthcare - Digital Health,Series A,2025-09-05,meeting_taken,"Converted, led the round."
+5091,1185,Company Q75,DeepTech,Series A,2026-02-28,meeting_taken,"Took the meeting as a favour, not a fit."
+5092,1180,Company Q31,DeepTech,Seed,2026-05-09,converted,"Took the meeting as a favour, not a fit."
+5093,1005,Company Z61,ClimateTech,Pre-seed,2024-11-25,declined,"Converted, led the round."
+5094,1115,Company R28,Marketplace,Pre-seed,2024-06-04,meeting_taken,
+5095,1034,Company E18,Healthcare - Digital Health,Series A,2023-10-26,declined,Passed - portfolio conflict.
+5096,1197,Company J28,Enterprise SaaS,Seed,2023-10-07,converted,Passed - portfolio conflict.
+5097,1118,Company A70,ClimateTech,Series A,2025-12-18,converted,"Converted, led the round."
+5098,1172,Company C82,FinTech,Seed,2025-06-10,declined,"Converted, led the round."
+5099,1004,Company Y31,DeepTech,Seed,2026-07-23,meeting_taken,
+5100,1007,Company C91,Marketplace,Series A,2023-06-11,declined,
+5101,1203,Company R11,Enterprise SaaS,Pre-seed,2025-07-26,converted,"Strong team, wrong stage for us."
+5102,1074,Company X18,ClimateTech,Pre-seed,2026-07-16,intro_only,No response after two follow-ups.
+5103,1172,Company Z26,DeepTech,Seed,2026-06-19,declined,
+5104,1134,Company L37,DeepTech,Seed,2024-03-02,converted,"Took the meeting as a favour, not a fit."
+5105,1069,Company V53,Healthcare - Digital Health,Pre-seed,2025-11-11,intro_only,No response after two follow-ups.
+5106,1215,Company N36,Enterprise SaaS,Series A,2026-02-11,meeting_taken,Passed - portfolio conflict.
+5107,1197,Company D98,Enterprise SaaS,Series A,2025-03-14,meeting_taken,"Converted, led the round."
+5108,1054,Company R82,Enterprise SaaS,Series A,2024-05-14,intro_only,"Converted, led the round."
+5109,1044,Company K90,Enterprise SaaS,Pre-seed,2023-04-09,declined,"Converted, led the round."
+5110,1088,Company Z33,Marketplace,Seed,2026-11-28,declined,Liked it. Asked for financials.
+5111,1150,Company S74,Enterprise SaaS,Seed,2024-09-25,intro_only,Liked it. Asked for financials.
+5112,1210,Company A29,DeepTech,Seed,2024-07-10,meeting_taken,"Took the meeting as a favour, not a fit."
+5113,1027,Company D82,Enterprise SaaS,Series A,2026-07-12,intro_only,Liked it. Asked for financials.
+5114,1179,Company X17,Enterprise SaaS,Pre-seed,2024-05-21,meeting_taken,Passed - portfolio conflict.
+5115,1083,Company K41,ClimateTech,Seed,2024-01-13,meeting_taken,
+5116,1138,Company W22,FinTech,Seed,2024-12-15,declined,"Converted, led the round."
+5117,1036,Company J77,DeepTech,Pre-seed,2023-11-25,declined,"Took the meeting as a favour, not a fit."
+5118,1181,Company K32,Healthcare - Digital Health,Series A,2026-02-22,no_response,Liked it. Asked for financials.
+5119,1142,Company F33,Marketplace,Series A,2025-03-23,no_response,Too early.
+5120,1160,Company X54,FinTech,Seed,2026-06-21,meeting_taken,"Took the meeting as a favour, not a fit."
+5121,1193,Company G17,FinTech,Pre-seed,2023-02-17,intro_only,
+5122,1041,Company J81,DeepTech,Series A,2026-10-20,meeting_taken,No response after two follow-ups.
+5123,1154,Company P27,ClimateTech,Series A,2026-07-10,meeting_taken,"Strong team, wrong stage for us."
+5124,1167,Company E81,DeepTech,Pre-seed,2024-02-19,converted,"Took the meeting as a favour, not a fit."
+5125,1046,Company F86,ClimateTech,Series A,2024-08-01,converted,
+5126,1030,Company A21,ClimateTech,Series A,2023-12-24,declined,"Took the meeting as a favour, not a fit."
+5127,1134,Company X25,Healthcare - Digital Health,Seed,2023-09-25,meeting_taken,Passed - portfolio conflict.
+5128,1204,Company C90,Healthcare - Digital Health,Seed,2023-09-11,intro_only,Too early.
+5129,1008,Company J43,FinTech,Pre-seed,2026-04-05,converted,Passed - portfolio conflict.
+5130,1070,Company Z99,ClimateTech,Pre-seed,2023-04-25,declined,No response after two follow-ups.
+5131,1174,Company B12,Healthcare - Digital Health,Pre-seed,2023-09-16,converted,"Strong team, wrong stage for us."
+5132,1195,Company P34,Healthcare - Digital Health,Pre-seed,2025-02-21,intro_only,"Converted, led the round."
+5133,1014,Company E25,ClimateTech,Seed,2025-04-12,intro_only,No response after two follow-ups.
+5134,1187,Company L48,FinTech,Pre-seed,2023-01-07,declined,"Converted, led the round."
+5135,1211,Company G28,Enterprise SaaS,Series A,2023-08-20,meeting_taken,Too early.
+5136,1104,Company C80,Healthcare - Digital Health,Pre-seed,2025-10-22,intro_only,"Converted, led the round."
+5137,1215,Company S92,Healthcare - Digital Health,Seed,2025-05-28,meeting_taken,Too early.
+5138,1116,Company A90,ClimateTech,Seed,2026-04-05,meeting_taken,No response after two follow-ups.
+5139,1191,Company T14,Enterprise SaaS,Pre-seed,2023-08-07,meeting_taken,No response after two follow-ups.
+5140,1144,Company K94,Enterprise SaaS,Series A,2023-05-15,meeting_taken,"Took the meeting as a favour, not a fit."
+5141,1013,Company S22,Enterprise SaaS,Seed,2023-10-25,declined,Passed - portfolio conflict.
+5142,1198,Company H74,DeepTech,Seed,2026-06-01,meeting_taken,No response after two follow-ups.
+5143,1067,Company F50,Marketplace,Pre-seed,2023-11-19,meeting_taken,"Converted, led the round."
+5144,1128,Company S65,Healthcare - Digital Health,Series A,2024-05-24,declined,Liked it. Asked for financials.
+5145,1011,Company P76,Marketplace,Series A,2025-04-23,converted,Liked it. Asked for financials.
+5146,1171,Company L76,Marketplace,Seed,2023-04-08,meeting_taken,"Strong team, wrong stage for us."
+5147,1149,Company R66,DeepTech,Series A,2023-12-16,meeting_taken,Liked it. Asked for financials.
+5148,1089,Company T68,ClimateTech,Series A,2026-08-17,converted,"Strong team, wrong stage for us."
+5149,1088,Company G30,FinTech,Pre-seed,2024-03-20,intro_only,"Took the meeting as a favour, not a fit."
+5150,1054,Company L67,Marketplace,Pre-seed,2025-02-10,declined,Too early.
+5151,1070,Company N58,Healthcare - Digital Health,Pre-seed,2023-06-28,converted,Liked it. Asked for financials.
+5152,1213,Company F33,ClimateTech,Seed,2024-12-26,meeting_taken,"Took the meeting as a favour, not a fit."
+5153,1152,Company D21,Healthcare - Digital Health,Seed,2026-10-27,no_response,"Strong team, wrong stage for us."
+5154,1013,Company D14,Healthcare - Digital Health,Series A,2023-08-27,meeting_taken,Liked it. Asked for financials.
+5155,1150,Company H57,Healthcare - Digital Health,Seed,2023-08-11,converted,"Converted, led the round."
+5156,1065,Company S38,Enterprise SaaS,Series A,2025-12-22,meeting_taken,"Took the meeting as a favour, not a fit."
+5157,1211,Company H44,Marketplace,Series A,2024-01-07,declined,Liked it. Asked for financials.
+5158,1211,Company V59,FinTech,Pre-seed,2025-04-27,meeting_taken,"Strong team, wrong stage for us."
+5159,1182,Company B52,FinTech,Seed,2024-06-16,converted,No response after two follow-ups.
+5160,1149,Company E42,Enterprise SaaS,Series A,2025-09-11,declined,"Strong team, wrong stage for us."
+5161,1130,Company S42,Enterprise SaaS,Pre-seed,2025-03-05,meeting_taken,
+5162,1049,Company U58,Enterprise SaaS,Series A,2023-09-23,meeting_taken,No response after two follow-ups.
+5163,1127,Company S70,FinTech,Seed,2026-03-19,declined,
+5164,1185,Company D74,DeepTech,Pre-seed,2023-04-21,meeting_taken,Passed - portfolio conflict.
+5165,1116,Company E64,DeepTech,Pre-seed,2025-05-11,no_response,"Strong team, wrong stage for us."
+5166,1011,Company V59,Marketplace,Seed,2024-01-20,no_response,"Converted, led the round."
+5167,1115,Company N85,Enterprise SaaS,Pre-seed,2023-02-12,meeting_taken,"Took the meeting as a favour, not a fit."
+5168,1215,Company J82,FinTech,Series A,2026-07-13,meeting_taken,"Converted, led the round."
+5169,1193,Company K34,Enterprise SaaS,Pre-seed,2026-06-03,converted,"Strong team, wrong stage for us."
+5170,1107,Company J25,ClimateTech,Seed,2024-05-23,meeting_taken,"Took the meeting as a favour, not a fit."
+5171,1039,Company Z89,Healthcare - Digital Health,Pre-seed,2023-06-20,meeting_taken,Too early.
+5172,1004,Company Q12,Marketplace,Series A,2023-10-08,meeting_taken,"Took the meeting as a favour, not a fit."
+5173,1033,Company U86,FinTech,Seed,2023-11-16,intro_only,"Strong team, wrong stage for us."
+5174,1222,Company T61,Enterprise SaaS,Seed,2026-12-05,intro_only,Passed - portfolio conflict.
+5175,1165,Company V34,FinTech,Pre-seed,2023-02-01,intro_only,
+5176,1175,Company A95,ClimateTech,Pre-seed,2024-01-21,no_response,No response after two follow-ups.
+5177,1024,Company D60,DeepTech,Pre-seed,2023-01-27,intro_only,"Converted, led the round."
+5178,1039,Company S20,Marketplace,Seed,2024-12-21,meeting_taken,
+5179,1222,Company T13,ClimateTech,Seed,2024-05-16,no_response,No response after two follow-ups.
+5180,1183,Company J98,DeepTech,Pre-seed,2024-05-05,converted,No response after two follow-ups.
+5181,1002,Company X33,ClimateTech,Seed,2026-07-23,meeting_taken,Too early.
+5182,1205,Company W63,Enterprise SaaS,Pre-seed,2026-05-23,meeting_taken,Too early.
+5183,1001,Company T91,Enterprise SaaS,Seed,2026-05-23,no_response,"Converted, led the round."
+5184,1115,Company F40,DeepTech,Pre-seed,2026-08-26,meeting_taken,No response after two follow-ups.
+5185,1199,Company J66,ClimateTech,Pre-seed,2023-08-18,no_response,"Converted, led the round."
+5186,1179,Company Q77,Enterprise SaaS,Series A,2025-06-17,no_response,
+5187,1065,Company S23,DeepTech,Pre-seed,2024-11-12,intro_only,"Strong team, wrong stage for us."
+5188,1002,Company R74,ClimateTech,Seed,2023-05-23,meeting_taken,"Converted, led the round."
+5189,1065,Company E77,Healthcare - Digital Health,Seed,2023-07-16,no_response,"Took the meeting as a favour, not a fit."
+5190,1138,Company A45,FinTech,Pre-seed,2026-10-03,converted,Passed - portfolio conflict.
+5191,1169,Company C27,Enterprise SaaS,Pre-seed,2025-12-16,declined,Liked it. Asked for financials.
+5192,9000,Company C54,ClimateTech,Series A,2025-07-18,meeting_taken,Too early.
+5193,1163,Company C42,FinTech,Pre-seed,2026-02-17,intro_only,"Strong team, wrong stage for us."
+5194,1000,Company E87,ClimateTech,Pre-seed,2023-10-10,no_response,"Strong team, wrong stage for us."
+5195,9011,Company W45,Healthcare - Digital Health,Pre-seed,2026-07-24,declined,Passed - portfolio conflict.
+5196,1045,Company K87,ClimateTech,Seed,2026-01-06,no_response,Passed - portfolio conflict.
+5197,1217,Company Y23,ClimateTech,Seed,2026-11-19,meeting_taken,Too early.
+5198,1021,Company F26,Healthcare - Digital Health,Pre-seed,2025-07-19,meeting_taken,Liked it. Asked for financials.
+5199,1146,Company E33,Enterprise SaaS,Seed,2026-09-21,intro_only,Too early.
+5200,1190,Company N68,Enterprise SaaS,Series A,2023-10-26,converted,"Strong team, wrong stage for us."
+5201,1043,Company T68,ClimateTech,Pre-seed,2026-09-12,meeting_taken,Too early.
+5202,1082,Company B47,Healthcare - Digital Health,Seed,2025-06-15,intro_only,"Strong team, wrong stage for us."
+5203,1156,Company F62,FinTech,Seed,2026-12-15,declined,"Strong team, wrong stage for us."
+5204,1203,Company R64,Enterprise SaaS,Series A,2026-06-12,intro_only,"Took the meeting as a favour, not a fit."
+5205,1218,Company Y68,DeepTech,Series A,2024-03-18,converted,"Converted, led the round."
+5206,1179,Company K73,FinTech,Seed,2026-09-23,meeting_taken,"Converted, led the round."
+5207,1056,Company E63,ClimateTech,Series A,2024-09-16,converted,"Strong team, wrong stage for us."
+5208,1190,Company G28,FinTech,Series A,2026-03-13,meeting_taken,Liked it. Asked for financials.
+5209,1142,Company G20,DeepTech,Series A,2026-12-02,meeting_taken,"Converted, led the round."
+5210,1067,Company D36,Enterprise SaaS,Series A,2026-03-10,meeting_taken,Passed - portfolio conflict.
+5211,9000,Company Z51,DeepTech,Pre-seed,2023-10-12,converted,"Converted, led the round."
+5212,1118,Company S80,FinTech,Series A,2024-11-17,no_response,"Took the meeting as a favour, not a fit."
+5213,1149,Company J45,Enterprise SaaS,Seed,2023-12-04,meeting_taken,"Took the meeting as a favour, not a fit."
+5214,1156,Company H10,Marketplace,Seed,2023-07-12,meeting_taken,"Converted, led the round."
+5215,1085,Company Y67,FinTech,Pre-seed,2024-06-12,declined,"Strong team, wrong stage for us."
+5216,1222,Company L84,Healthcare - Digital Health,Series A,2026-12-25,declined,Too early.
+5217,1208,Company X71,FinTech,Pre-seed,2023-07-19,meeting_taken,
+5218,1018,Company X31,Marketplace,Pre-seed,2024-01-08,no_response,Passed - portfolio conflict.
+5219,1162,Company Z18,Healthcare - Digital Health,Seed,2024-03-21,meeting_taken,No response after two follow-ups.
+5220,1159,Company F23,ClimateTech,Series A,2023-03-28,meeting_taken,No response after two follow-ups.
+5221,1093,Company K68,Marketplace,Pre-seed,2023-01-26,declined,"Took the meeting as a favour, not a fit."
+5222,1109,Company M89,Marketplace,Series A,2025-10-10,no_response,"Converted, led the round."
+5223,1037,Company Q69,ClimateTech,Seed,2026-11-17,meeting_taken,Too early.
+5224,1125,Company W84,FinTech,Pre-seed,2026-01-20,meeting_taken,
+5225,1080,Company F24,ClimateTech,Seed,2025-03-08,intro_only,
+5226,1024,Company J96,FinTech,Pre-seed,2026-06-06,declined,"Converted, led the round."
+5227,9002,Company M93,Enterprise SaaS,Series A,2026-10-26,no_response,No response after two follow-ups.
+5228,1179,Company X75,Marketplace,Series A,2024-08-12,meeting_taken,"Strong team, wrong stage for us."
+5229,1062,Company M33,FinTech,Series A,2026-01-14,meeting_taken,
+5230,1068,Company J86,Marketplace,Pre-seed,2024-02-21,meeting_taken,
+5231,1070,Company P56,Healthcare - Digital Health,Seed,2024-05-08,converted,"Strong team, wrong stage for us."
+5232,1154,Company P43,FinTech,Pre-seed,2026-10-08,no_response,Too early.
+5233,1199,Company P63,Marketplace,Series A,2023-09-10,meeting_taken,"Strong team, wrong stage for us."
+5234,1115,Company L53,Marketplace,Seed,2023-10-23,no_response,Liked it. Asked for financials.
+5235,1139,Company K49,Enterprise SaaS,Seed,2026-06-24,declined,"Strong team, wrong stage for us."
+5236,1213,Company M16,Marketplace,Pre-seed,2023-06-07,intro_only,"Converted, led the round."
+5237,1061,Company K37,Enterprise SaaS,Pre-seed,2026-06-25,intro_only,Liked it. Asked for financials.
+5238,1203,Company D74,Healthcare - Digital Health,Series A,2023-04-26,intro_only,Too early.
+5239,1224,Company K53,ClimateTech,Series A,2025-07-04,meeting_taken,Too early.
+5240,1069,Company E33,Marketplace,Seed,2024-04-07,meeting_taken,"Took the meeting as a favour, not a fit."
+5241,1092,Company A48,Healthcare - Digital Health,Pre-seed,2024-11-15,converted,No response after two follow-ups.
+5242,1074,Company U65,Healthcare - Digital Health,Seed,2026-06-09,intro_only,Too early.
+5243,1157,Company W55,ClimateTech,Pre-seed,2024-12-17,meeting_taken,
+5244,1188,Company E19,ClimateTech,Pre-seed,2023-07-07,intro_only,"Took the meeting as a favour, not a fit."
+5245,1091,Company V36,Enterprise SaaS,Pre-seed,2024-11-21,no_response,Too early.
+5246,9008,Company F66,DeepTech,Series A,2023-03-23,meeting_taken,
+5247,1142,Company X90,Marketplace,Seed,2026-12-01,declined,"Converted, led the round."
+5248,1068,Company G56,ClimateTech,Pre-seed,2023-05-23,no_response,"Took the meeting as a favour, not a fit."
+5249,1015,Company S27,Healthcare - Digital Health,Seed,2024-04-27,meeting_taken,Liked it. Asked for financials.
+5250,1221,Company K89,DeepTech,Pre-seed,2025-03-05,meeting_taken,No response after two follow-ups.
+5251,1118,Company M46,Enterprise SaaS,Pre-seed,2026-04-14,meeting_taken,"Strong team, wrong stage for us."
+5252,1090,Company R46,Marketplace,Pre-seed,2025-09-18,meeting_taken,"Took the meeting as a favour, not a fit."
+5253,1137,Company E89,DeepTech,Pre-seed,2026-10-21,meeting_taken,"Strong team, wrong stage for us."
+5254,1190,Company P13,DeepTech,Series A,2026-11-20,converted,
+5255,1045,Company B67,Marketplace,Series A,2025-02-12,converted,
+5256,1227,Company L59,Enterprise SaaS,Series A,2023-02-17,meeting_taken,"Strong team, wrong stage for us."
+5257,1115,Company V29,Enterprise SaaS,Seed,2025-09-16,meeting_taken,Liked it. Asked for financials.
+5258,1146,Company L83,FinTech,Seed,2023-12-13,intro_only,No response after two follow-ups.
+5259,9005,Company N21,FinTech,Series A,2025-05-23,intro_only,"Took the meeting as a favour, not a fit."
+5260,1149,Company T75,FinTech,Series A,2025-11-23,meeting_taken,No response after two follow-ups.
+5261,1053,Company L95,Marketplace,Series A,2025-06-08,intro_only,"Took the meeting as a favour, not a fit."
+5262,1177,Company B95,Marketplace,Series A,2025-03-24,meeting_taken,"Converted, led the round."
+5263,1079,Company L36,ClimateTech,Seed,2023-01-15,intro_only,"Took the meeting as a favour, not a fit."
+5264,1109,Company H92,DeepTech,Seed,2026-09-04,meeting_taken,No response after two follow-ups.
+5265,1071,Company F25,Healthcare - Digital Health,Series A,2025-03-05,no_response,Liked it. Asked for financials.
+5266,1219,Company E30,Enterprise SaaS,Series A,2025-09-16,no_response,"Strong team, wrong stage for us."
+5267,1089,Company M50,ClimateTech,Seed,2025-04-24,declined,
+5268,1032,Company E25,Healthcare - Digital Health,Pre-seed,2024-08-26,meeting_taken,Too early.
+5269,1198,Company L19,DeepTech,Pre-seed,2024-04-27,meeting_taken,
+5270,1134,Company H56,FinTech,Pre-seed,2023-05-20,intro_only,No response after two follow-ups.
+5271,1169,Company B97,ClimateTech,Seed,2026-08-20,meeting_taken,
+5272,9007,Company P10,Healthcare - Digital Health,Pre-seed,2026-09-05,no_response,
+5273,1220,Company T39,Healthcare - Digital Health,Series A,2026-01-16,meeting_taken,No response after two follow-ups.
+5274,1055,Company Q38,FinTech,Pre-seed,2024-05-03,declined,"Converted, led the round."
+5275,1061,Company P75,Marketplace,Seed,2023-10-05,meeting_taken,"Took the meeting as a favour, not a fit."
+5276,9002,Company D80,Healthcare - Digital Health,Pre-seed,2023-03-23,converted,"Strong team, wrong stage for us."
+5277,1014,Company X72,Marketplace,Series A,2026-04-11,meeting_taken,"Strong team, wrong stage for us."
+5278,1090,Company Y30,DeepTech,Series A,2023-07-25,meeting_taken,"Strong team, wrong stage for us."
+5279,1085,Company E51,DeepTech,Pre-seed,2024-04-21,converted,Too early.
+5280,1059,Company C55,DeepTech,Series A,2024-11-21,converted,No response after two follow-ups.
+5281,1111,Company Q43,Healthcare - Digital Health,Pre-seed,2025-04-09,meeting_taken,"Converted, led the round."
+5282,1032,Company Y85,ClimateTech,Pre-seed,2026-06-11,declined,Too early.
+5283,1029,Company J16,Enterprise SaaS,Seed,2024-12-13,intro_only,Liked it. Asked for financials.
+5284,1190,Company K58,Marketplace,Seed,2023-05-15,converted,"Took the meeting as a favour, not a fit."
+5285,1205,Company M13,ClimateTech,Seed,2024-04-06,declined,"Converted, led the round."
+5286,1223,Company F90,FinTech,Series A,2026-08-07,meeting_taken,Too early.
+5287,1151,Company V70,Marketplace,Pre-seed,2023-06-07,no_response,
+5288,1029,Company G10,Marketplace,Seed,2023-11-23,meeting_taken,"Strong team, wrong stage for us."
+5289,1180,Company E49,Healthcare - Digital Health,Seed,2024-07-26,converted,
+5290,1033,Company Q78,FinTech,Series A,2023-04-14,meeting_taken,No response after two follow-ups.
+5291,1211,Company U15,Healthcare - Digital Health,Series A,2024-04-21,intro_only,"Took the meeting as a favour, not a fit."
+5292,1132,Company V15,Marketplace,Series A,2023-05-01,declined,Passed - portfolio conflict.
+5293,9013,Company K71,DeepTech,Series A,2023-04-17,meeting_taken,"Strong team, wrong stage for us."
+5294,1168,Company J35,Enterprise SaaS,Pre-seed,2025-02-05,converted,Too early.
+5295,1075,Company E18,Enterprise SaaS,Series A,2023-11-23,meeting_taken,Liked it. Asked for financials.
+5296,1013,Company R97,Marketplace,Seed,2023-12-25,declined,"Converted, led the round."
+5297,1074,Company P65,Enterprise SaaS,Seed,2025-03-01,meeting_taken,Passed - portfolio conflict.
+5298,1172,Company H33,FinTech,Seed,2025-12-28,meeting_taken,No response after two follow-ups.
+5299,1126,Company P68,FinTech,Seed,2023-01-07,meeting_taken,Passed - portfolio conflict.
+5300,1161,Company M14,DeepTech,Series A,2026-06-11,meeting_taken,
+5301,1148,Company D28,DeepTech,Pre-seed,2025-10-27,meeting_taken,"Strong team, wrong stage for us."
+5302,1165,Company U49,Healthcare - Digital Health,Seed,2026-12-05,intro_only,"Took the meeting as a favour, not a fit."
+5303,1205,Company H58,ClimateTech,Pre-seed,2023-03-21,meeting_taken,"Took the meeting as a favour, not a fit."
+5304,1031,Company U22,FinTech,Pre-seed,2023-12-19,meeting_taken,
+5305,1036,Company H92,DeepTech,Pre-seed,2025-02-16,converted,"Converted, led the round."
+5306,1088,Company P62,Healthcare - Digital Health,Seed,2026-01-27,no_response,Too early.
+5307,1142,Company U10,FinTech,Series A,2025-02-27,intro_only,Too early.
+5308,1205,Company L87,Marketplace,Series A,2024-12-01,no_response,Too early.
+5309,1196,Company C49,Marketplace,Pre-seed,2025-03-26,intro_only,Liked it. Asked for financials.
+5310,1066,Company N52,Healthcare - Digital Health,Pre-seed,2026-08-06,no_response,"Strong team, wrong stage for us."
+5311,1041,Company T79,FinTech,Seed,2024-12-03,meeting_taken,Passed - portfolio conflict.
+5312,1185,Company R85,Marketplace,Seed,2025-02-19,converted,Passed - portfolio conflict.
+5313,1127,Company P65,Enterprise SaaS,Seed,2025-03-19,meeting_taken,
+5314,1074,Company H41,ClimateTech,Series A,2025-03-16,no_response,Passed - portfolio conflict.
+5315,1030,Company N16,Healthcare - Digital Health,Seed,2025-06-10,meeting_taken,Passed - portfolio conflict.
+5316,1137,Company S63,ClimateTech,Seed,2026-12-10,meeting_taken,Too early.
+5317,1067,Company A93,Enterprise SaaS,Seed,2023-05-09,intro_only,Liked it. Asked for financials.
+5318,1016,Company D82,Marketplace,Series A,2023-05-23,meeting_taken,"Strong team, wrong stage for us."
+5319,1041,Company W81,Marketplace,Series A,2026-12-14,no_response,Passed - portfolio conflict.
+5320,1092,Company Q20,DeepTech,Series A,2023-08-06,meeting_taken,"Took the meeting as a favour, not a fit."
+5321,1017,Company V51,Healthcare - Digital Health,Seed,2025-01-07,no_response,"Strong team, wrong stage for us."
+5322,1221,Company M25,Marketplace,Seed,2025-03-08,meeting_taken,No response after two follow-ups.
+5323,1160,Company E77,Healthcare - Digital Health,Seed,2026-03-19,declined,Too early.
+5324,1199,Company F20,Healthcare - Digital Health,Series A,2026-06-02,converted,Too early.
+5325,1061,Company N84,ClimateTech,Series A,2026-04-02,meeting_taken,"Strong team, wrong stage for us."
+5326,1075,Company A50,Healthcare - Digital Health,Series A,2026-06-04,converted,No response after two follow-ups.
+5327,1044,Company C67,FinTech,Series A,2023-04-07,converted,"Strong team, wrong stage for us."
+5328,1128,Company Z46,ClimateTech,Series A,2023-04-17,converted,Passed - portfolio conflict.
+5329,1042,Company S99,ClimateTech,Series A,2024-03-23,intro_only,No response after two follow-ups.
+5330,1120,Company A75,Healthcare - Digital Health,Pre-seed,2023-08-02,intro_only,
+5331,1179,Company G11,ClimateTech,Pre-seed,2024-08-27,converted,Passed - portfolio conflict.
+5332,1084,Company E74,ClimateTech,Seed,2026-11-24,meeting_taken,"Took the meeting as a favour, not a fit."
+5333,1053,Company C69,Enterprise SaaS,Series A,2025-10-20,converted,"Strong team, wrong stage for us."
+5334,1074,Company H33,FinTech,Pre-seed,2025-04-24,declined,Liked it. Asked for financials.
+5335,1225,Company P76,Healthcare - Digital Health,Seed,2025-10-18,declined,"Converted, led the round."
+5336,1224,Company X78,Healthcare - Digital Health,Series A,2024-02-28,no_response,"Strong team, wrong stage for us."
+5337,1224,Company P64,DeepTech,Pre-seed,2024-09-14,meeting_taken,"Converted, led the round."
+5338,1121,Company X72,Enterprise SaaS,Series A,2026-01-16,meeting_taken,"Converted, led the round."
+5339,1093,Company R26,ClimateTech,Pre-seed,2024-11-08,declined,Too early.
+5340,1007,Company V51,FinTech,Series A,2025-11-21,no_response,No response after two follow-ups.
+5341,1134,Company Q59,DeepTech,Seed,2026-05-21,meeting_taken,"Converted, led the round."
+5342,1194,Company Z32,Marketplace,Seed,2026-03-15,no_response,Liked it. Asked for financials.
+5343,1204,Company Z19,DeepTech,Series A,2026-04-05,meeting_taken,Liked it. Asked for financials.
+5344,1118,Company L34,Healthcare - Digital Health,Series A,2026-01-11,meeting_taken,"Strong team, wrong stage for us."
+5345,1219,Company A47,Enterprise SaaS,Series A,2024-05-12,meeting_taken,"Converted, led the round."
+5346,1036,Company Z63,DeepTech,Series A,2023-02-27,meeting_taken,
+5347,1137,Company V79,Healthcare - Digital Health,Series A,2024-08-19,meeting_taken,No response after two follow-ups.
+5348,1049,Company M39,ClimateTech,Series A,2026-12-14,meeting_taken,"Took the meeting as a favour, not a fit."
+5349,9008,Company A69,DeepTech,Pre-seed,2026-08-01,declined,"Took the meeting as a favour, not a fit."
+5350,1114,Company F53,Marketplace,Pre-seed,2023-12-24,intro_only,"Converted, led the round."
+5351,1049,Company V76,DeepTech,Pre-seed,2023-05-22,meeting_taken,Liked it. Asked for financials.
+5352,1143,Company M59,Enterprise SaaS,Pre-seed,2025-10-07,converted,Too early.
+5353,1144,Company P39,ClimateTech,Series A,2025-01-10,converted,Too early.
+5354,9009,Company L68,Enterprise SaaS,Pre-seed,2025-12-15,no_response,Liked it. Asked for financials.
+5355,1081,Company D49,ClimateTech,Pre-seed,2026-08-09,meeting_taken,No response after two follow-ups.
+5356,9012,Company M82,DeepTech,Seed,2025-01-20,declined,Passed - portfolio conflict.
+5357,1111,Company P75,FinTech,Series A,2024-03-20,meeting_taken,Passed - portfolio conflict.
+5358,1033,Company M22,FinTech,Seed,2026-04-24,converted,No response after two follow-ups.
+5359,1202,Company L96,Enterprise SaaS,Series A,2025-03-05,meeting_taken,Passed - portfolio conflict.
