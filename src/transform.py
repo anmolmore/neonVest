@@ -1,9 +1,9 @@
 """
-Merge airtable_investors.csv + mysql_investor_notes.csv into one keyed investor
-dataset, resolve match_history.csv against it, and flag anything that can't be
-merged automatically for manual review.
+Transform stage: clean, dedupe and join the raw Airtable + MySQL + match_history
+rows into one keyed investor dataset, flagging anything that can't be merged
+automatically for manual review.
 
-Strategy (see case1_report.pdf for the full writeup):
+Strategy (see case1_report.md for the full writeup):
   1. Normalize name/firm strings on both sides.
   2. Collapse exact-duplicate rows WITHIN each source first (same normalized
      name+firm). Keep the row with the more recent/non-null timestamp as
@@ -22,30 +22,19 @@ Strategy (see case1_report.pdf for the full writeup):
      rokk3r" placeholder batch) are excluded from the investor table but kept
      as an UNKNOWN_LEGACY sentinel in match_history so outcome data isn't lost.
   6. match_history is re-keyed from investor_pk -> investor_id.
-
-Outputs:
-  merged_investors.csv       - the merged, deduped investor table
-  merged_match_history.csv   - match_history re-keyed to investor_id
-  review_queue.csv           - everything that needs a human before it merges
 """
-import csv
 import re
 import uuid
 import difflib
 from collections import defaultdict
 
-AIRTABLE_PATH = "airtable_investors.csv"
-MYSQL_PATH = "mysql_investor_notes.csv"
-MATCH_PATH = "match_history.csv"
-
-OUT_INVESTORS = "merged_investors.csv"
-OUT_MATCHES = "merged_match_history.csv"
-OUT_REVIEW = "review_queue.csv"
-
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
 PHONE_RE = re.compile(r"\+?\d[\d\s\-\(\)]{7,}\d")
 LEGACY_NAME_RE = re.compile(r"legacy contact", re.I)
 HONORIFIC_RE = re.compile(r"^(dr|mr|ms|mrs|prof)\.?\s+", re.I)
+
+NAME_THRESHOLD = 0.90
+FIRM_THRESHOLD = 0.70
 
 
 def norm(s):
@@ -60,11 +49,6 @@ def norm_firm(s):
     s = re.sub(r"\b(inc\.?|llc|ltd\.?|holdings?|group|fund|capital|partners?|ventures?|advisors?)\b", "", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
-
-
-def read_csv(path):
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
 
 
 def extract_contact(notes):
@@ -127,10 +111,9 @@ def fuzzy_score(a_name, a_firm, b_name, b_firm):
     return name_sim, firm_sim
 
 
-def main():
-    air_raw = read_csv(AIRTABLE_PATH)
-    mysql_raw = read_csv(MYSQL_PATH)
-    match_raw = read_csv(MATCH_PATH)
+def transform(air_raw, mysql_raw, match_raw):
+    """Clean, dedupe and join the raw rows. Returns (investors, merged_matches,
+    review_rows, stats)."""
 
     # --- split out structurally unresolvable rows (legacy placeholders, blank identity) ---
     legacy_pks = set()
@@ -198,9 +181,6 @@ def main():
     # Tier 2: fuzzy match remainder
     remaining_air = [k for k in air_by_key if k not in matched_air_keys]
     remaining_mysql = [k for k in mysql_by_key if k not in matched_mysql_keys]
-
-    NAME_THRESHOLD = 0.90
-    FIRM_THRESHOLD = 0.70
 
     for a_key in remaining_air:
         a_name, a_firm = a_key
@@ -333,39 +313,18 @@ def main():
             "field": "investor_pk", "value_a": pk, "value_b": "",
         })
 
-    # --- write outputs ---
-    with open(OUT_INVESTORS, "w", newline="", encoding="utf-8") as f:
-        fieldnames = list(investors[0].keys())
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader()
-        w.writerows(investors)
+    stats = {
+        "airtable_source_rows": len(air_raw),
+        "mysql_source_rows": len(mysql_raw),
+        "excluded_legacy_pks": len(legacy_pks),
+        "blank_identity_airtable": len(air_blank_identity),
+        "merged_investors": len(investors),
+        "matched_both_sources": sum(1 for a, m in pairs if a and m),
+        "airtable_only": sum(1 for a, m in pairs if a and not m),
+        "mysql_only": sum(1 for a, m in pairs if m and not a),
+        "match_history_rows": len(merged_matches),
+        "unresolved_match_pks": len(unresolved_match_pks),
+        "review_queue_rows": len(review_rows),
+    }
 
-    with open(OUT_MATCHES, "w", newline="", encoding="utf-8") as f:
-        fieldnames = list(merged_matches[0].keys())
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader()
-        w.writerows(merged_matches)
-
-    with open(OUT_REVIEW, "w", newline="", encoding="utf-8") as f:
-        fieldnames = ["reason", "source", "name", "firm", "field", "value_a", "value_b"]
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader()
-        w.writerows(review_rows)
-
-    print(f"Airtable source rows:        {len(air_raw)}")
-    print(f"MySQL source rows:           {len(mysql_raw)}")
-    print(f"  - excluded legacy pks:     {len(legacy_pks)}")
-    print(f"  - blank-identity airtable: {len(air_blank_identity)}")
-    print(f"Merged investors:            {len(investors)}")
-    print(f"  - matched both sources:    {sum(1 for a,m in pairs if a and m)}")
-    print(f"  - airtable only:           {sum(1 for a,m in pairs if a and not m)}")
-    print(f"  - mysql only:              {sum(1 for a,m in pairs if m and not a)}")
-    print(f"Match history rows:          {len(merged_matches)}")
-    print(f"  - unresolved investor_pk:  {len(unresolved_match_pks)}")
-    print(f"Review queue rows:           {len(review_rows)}")
-    print()
-    print(f"Wrote {OUT_INVESTORS}, {OUT_MATCHES}, {OUT_REVIEW}")
-
-
-if __name__ == "__main__":
-    main()
+    return investors, merged_matches, review_rows, stats

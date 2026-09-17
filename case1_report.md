@@ -4,11 +4,11 @@ Merging Airtable structured attributes with MySQL free-text notes and match hist
 
 ## What's actually in the files
 
-**airtable_investors.csv**: 228 rows, keyed by `record_id` (unique). Structured columns are mostly empty in practice: `check_size` is blank in 202/228 rows (88.6%), and the 26 values that are filled are free text (“$80K – $1M”, “50~100k”, “Varies”, “N/A”) — not a parseable field today. `investor_type` is blank in 51.8% of rows, `sectors` in 42.5%. `title` sometimes contains a full sentence (“I'm currently a Founder and CEO”) instead of a job title — form-field bleed from a free-response question.
+**data/raw/airtable_investors.csv**: 228 rows, keyed by `record_id` (unique). Structured columns are mostly empty in practice: `check_size` is blank in 202/228 rows (88.6%), and the 26 values that are filled are free text (“$80K – $1M”, “50~100k”, “Varies”, “N/A”) — not a parseable field today. `investor_type` is blank in 51.8% of rows, `sectors` in 42.5%. `title` sometimes contains a full sentence (“I'm currently a Founder and CEO”) instead of a job title — form-field bleed from a free-response question.
 
-**mysql_investor_notes.csv**: 223 rows, keyed by `investor_pk` (unique). `notes` is unstructured free text; 88 rows have an embedded email, 47 a phone number, 21 are empty. 14 rows are placeholder junk: `name_raw` = “Legacy Contact 0”–“13”, `firm_raw` = “rokk3r” / “Rokk3r Inc.” / “Unknown” / blank, `source` = “import_2023”, no `created` date — a synthetic/scrubbed legacy batch, not real investors, but 16 rows in match_history reference these pks, so they're wired into outcome data.
+**data/raw/mysql_investor_notes.csv**: 223 rows, keyed by `investor_pk` (unique). `notes` is unstructured free text; 88 rows have an embedded email, 47 a phone number, 21 are empty. 14 rows are placeholder junk: `name_raw` = “Legacy Contact 0”–“13”, `firm_raw` = “rokk3r” / “Rokk3r Inc.” / “Unknown” / blank, `source` = “import_2023”, no `created` date — a synthetic/scrubbed legacy batch, not real investors, but 16 rows in match_history reference these pks, so they're wired into outcome data.
 
-**match_history.csv**: 360 rows, foreign-keyed to `mysql_investor_notes.investor_pk`, not to Airtable. There is no shared key across the two source systems at all — joining Airtable to MySQL (and therefore to match history) has to happen on `(name, firm)` text matching, which is exactly the unreliable operation you'd want a key for.
+**data/raw/match_history.csv**: 360 rows, foreign-keyed to `mysql_investor_notes.investor_pk`, not to Airtable. There is no shared key across the two source systems at all — joining Airtable to MySQL (and therefore to match history) has to happen on `(name, firm)` text matching, which is exactly the unreliable operation you'd want a key for.
 
 ## Schema for the merged dataset
 
@@ -97,10 +97,10 @@ Merged investors:            221
   - matched both sources:     195
   - airtable only:             18
   - mysql only:                 7
-  - + UNKNOWN_LEGACY sentinel:  1  -> 222 rows in merged_investors.csv
-Match history rows:          360  (+1 header) -> 361 rows in merged_match_history.csv
+  - + UNKNOWN_LEGACY sentinel:  1  -> 222 rows in data/processed/merged_investors.csv
+Match history rows:          360  (+1 header) -> 361 rows in data/processed/merged_match_history.csv
   - unresolved investor_pk:     0
 Review queue rows:              17
 ```
 
-Produced by `merge_investors.py` against `airtable_investors.csv`, `mysql_investor_notes.csv` and `match_history.csv`. Outputs: `merged_investors.csv`, `merged_match_history.csv`, `review_queue.csv`.
+Produced by the `src/` pipeline (`extract.py` → `transform.py` → `load.py`) against `data/raw/airtable_investors.csv`, `data/raw/mysql_investor_notes.csv` and `data/raw/match_history.csv`. Outputs: `data/processed/merged_investors.csv`, `data/processed/merged_match_history.csv`, `data/processed/review_queue.csv`.
