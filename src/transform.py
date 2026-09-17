@@ -3,7 +3,7 @@ Transform stage: clean, dedupe and join the raw Airtable + MySQL + match_history
 rows into one keyed investor dataset, flagging anything that can't be merged
 automatically for manual review.
 
-Strategy (see case1_report.md for the full writeup):
+Strategy (see answers/case1/report.md for the full writeup):
   1. Normalize name/firm strings on both sides.
   2. Collapse exact-duplicate rows WITHIN each source first (same normalized
      name+firm). Keep the row with the more recent/non-null timestamp as
